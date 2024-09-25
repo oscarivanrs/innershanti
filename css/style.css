@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.mulish-4 {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 4;
+    font-style: normal;
+}
+
+header,
+section {
+  overflow-x: hidden;
+}
+
+:root {
+    --Mulish-font: "Mulish", cursive;
+    --light-black: #2e2c2caf;
+    --bggradient: linear-gradient(to bottom, #d7f2d5, #d7f2d5a7);
+    --mainbg: #d7f2d5;
+    --alternativebg: #0c3444;
+    --titlecolor: #0c3444;
+    --alttitlecolor: white;
+    --light-gray: rgba(255, 255, 255, 0.877);
+  }
+
+header a {
+font-family: var(--Mulish-font);
+font-size: 0.9em;
+color: whitesmoke;
+}
+
+header {
+    background: var(--mainbg);
+    /* fallback for old browsers */
+    background: var(--bggradient);
+}
+
+header .row .col-md-7 h1 {
+    color: var(--titlecolor);
+}
+
+header .row .col-md-5 {
+    padding: 22vmin 1vmin;
+    /*padding-bottom: 35vmin; */
+}
+
+header .row .col-md-7 {
+    padding: 4.2vmin 1vmin;
+}
+
+header .row .col-md-5 img {
+    width: 90%;
+    border-radius: 10px;
+}
+
+/********** section 1 **************/
+.section-1 {
+    padding: 20vmin 0vmin;
+    background: var(--alternativebg);
+  }
+  
+  .section-1 .row .col-md-6 .pray img {
+    opacity: 0.8;
+    width: 80%;
+    border-radius: 0.2em;
+  }
+  
+  .section-1 .row .col-md-6:last-child {
+    position: relative;
+  }
+  
+  .section-1 .row .col-md-6 .panel {
+    position: absolute;
+    top: 7vmin;
+    left: -18vmin;
+    background: #244857;
+    border-radius: 3px;
+    text-align: left;
+    padding: 13vmin 5vmin 20vmin 10vmin;
+    box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .section-1 .row .col-md-6 .panel h2 {
+    font-weight: bold;
+    padding: 0.4em 0;
+    font-size: 2em;
+    color: var(--alttitlecolor);
+  }
+
+  .section-1 .row .col-md-6 .panel li {
+    color: #a7b6bc;
+  }
+  
+  .section-1 .row .col-md-6 .panel p {
+    font-size: 0.9em;
+    color: #a7b6bc;
+  }
+
+/********** section 2 **************/
+.section-2 {
+    padding: 20vmin 0vmin;
+    background: var(--mainbg);
+    /* fallback for old browsers */
+    background: var(--bggradient);
+}
+
+.section-2 .card {
+    background: #c3dfc6;
+}
+
+.section-2 .card .card-body .card-title {
+    color: #0c3444;
+}
+
+.section-2 .card .card-body p {
+    color: #0c3444;
+}
+
+.section-2 h1 {
+    color: var(--titlecolor);
+}
+
+/********** section 3 **************/
+.section-3 {
+    padding: 20vmin 0vmin;
+    background: var(--alternativebg);
+}
+
+.section-3 h1 {
+    color: var(--alttitlecolor);
+}
+
+.section-3 .panel {
+    background: #244857;
+    text-align: left;
+}
+
+.section-3 .panel h2 {
+    color: var(--alttitlecolor);
+}
+
+.section-3 .panel h3 {
+    color: var(--alttitlecolor);
+}
+
+.section-3 .panel p {
+    color: #a7b6bc;
+}
+
+.section-3 .panel li {
+    color: #a7b6bc;
+}
+
+/********** section 4 **************/
+.section-4 {
+    padding: 20vmin 0vmin;
+    background: var(--mainbg);
+    /* fallback for old browsers */
+    background: var(--bggradient);
+}
+
+.section-4 .panel {
+    text-align: left;
+}
