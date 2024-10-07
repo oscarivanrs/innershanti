@@ -22,11 +22,15 @@ section {
 :root {
     --Mulish-font: "Mulish", cursive;
     --light-black: #2e2c2caf;
-    --bggradient: linear-gradient(to bottom, #d7f2d5, #d7f2d5a7);
-    --mainbg: #d7f2d5;
+    --bggradient: linear-gradient(to bottom, #c44b52, #e5876b);
+    --mainbg: #c44b52;
     --alternativebg: #0c3444;
     --titlecolor: #0c3444;
     --alttitlecolor: white;
+    --card-bg: #ffc293;
+    --alternative-card-bg: #244857;
+    --card-fontcolor: #0c3444;
+    --alternative-card-fontcolor: #a7b6bc;
     --light-gray: rgba(255, 255, 255, 0.877);
   }
 
@@ -42,6 +46,14 @@ header {
     background: var(--bggradient);
 }
 
+.headerhome {
+    background-image: url('../assets/sky.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
 header .row .col-md-7 h1 {
     color: var(--titlecolor);
 }
@@ -52,35 +64,46 @@ header .row .col-md-5 {
 }
 
 header .row .col-md-7 {
-    padding: 4.2vmin 1vmin;
+    padding: 4.2vmin 1vmin; 
 }
+
+header .col-md-7.col-sm-12.order-sm-2.order-md-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
 header .row .col-md-5 img {
     width: 90%;
     border-radius: 10px;
 }
 
-/********** section 1 **************/
-.section-1 {
+a {
+    color: inherit;
+}
+
+/********** section workshop **************/
+.section-workshop {
     padding: 15vmin 0vmin;
     background: var(--alternativebg);
   }
   
-  .section-1 .row .col-md-6 .pray img {
+  .section-workshop .row .col-md-6 .pray img {
     opacity: 0.8;
     width: 80%;
     border-radius: 0.2em;
   }
   
-  .section-1 .row .col-md-6:last-child {
+  .section-workshop .row .col-md-6:last-child {
     position: relative;
   }
   
-  .section-1 .row .col-md-6 .panel {
+  .section-workshop .row .col-md-6 .panel {
     position: relative;
     top: 5vmin;
     left: -30vmin;
-    background: #244857;
+    background: var(--alternative-card-bg);
     border-radius: 3px;
     text-align: left;
     /**padding: 13vmin 5vmin 20vmin 10vmin;**/
@@ -89,86 +112,134 @@ header .row .col-md-5 img {
     z-index: 1;
   }
   
-  .section-1 .row .col-md-6 .panel h2 {
+  .section-workshop .row .col-md-6 .panel h2 {
     font-weight: bold;
     padding: 0.4em 0;
     font-size: 2em;
     color: var(--alttitlecolor);
   }
 
-  .section-1 .row .col-md-6 .panel li {
-    color: #a7b6bc;
+  .section-workshop .row .col-md-6 .panel li {
+    color: var(--alternative-card-fontcolor);
   }
   
-  .section-1 .row .col-md-6 .panel p {
+  .section-workshop .row .col-md-6 .panel p {
     font-size: 0.9em;
-    color: #a7b6bc;
+    color: var(--alternative-card-fontcolor);
   }
 
-/********** section 2 **************/
-.section-2 {
+/********** section testimonials **************/
+.section-testimonials {
     padding: 10vmin 0vmin;
     background: var(--mainbg);
     /* fallback for old browsers */
     background: var(--bggradient);
 }
 
-.section-2 .card {
+.section-testimonials .card {
     margin: 1rem;
-    background: #c3dfc6;
+    background: var(--card-bg);
 }
 
-.section-2 .card .card-body .card-title {
-    color: #0c3444;
+.section-testimonials .card .card-body .card-title {
+    color: var(--card-fontcolor);
 }
 
-.section-2 .card .card-body p {
-    color: #0c3444;
+.section-testimonials .card .card-body p {
+    color: var(--card-fontcolor);
 }
 
-.section-2 h1 {
+.section-testimonials h1 {
     color: var(--titlecolor);
 }
 
-/********** section 3 **************/
-.section-3 {
+/********** section wellness **************/
+.section-wellness {
     padding: 20vmin 0vmin;
     background: var(--alternativebg);
 }
 
-.section-3 h1 {
+.section-wellness h1 {
     color: var(--alttitlecolor);
 }
 
-.section-3 .panel {
-    background: #244857;
+.section-wellness .card {
+    margin: 1rem;
+    background: var(--alternative-card-bg);
+}
+
+.section-wellness .card .panel {
     text-align: left;
 }
 
-.section-3 .panel h2 {
+.section-wellness .panel h2 {
     color: var(--alttitlecolor);
 }
 
-.section-3 .panel h3 {
+.section-wellness .panel h3 {
     color: var(--alttitlecolor);
 }
 
-.section-3 .panel p {
-    color: #a7b6bc;
+.section-wellness .panel p {
+    color: var(--alternative-card-fontcolor);
 }
 
-.section-3 .panel li {
-    color: #a7b6bc;
+.section-wellness .panel li {
+    color: var(--alternative-card-fontcolor);
 }
 
-/********** section 4 **************/
-.section-4 {
-    padding: 20vmin 0vmin;
+/********** section contact us **************/
+.section-contact {
+    padding: 5vmin 0vmin;
     background: var(--mainbg);
     /* fallback for old browsers */
     background: var(--bggradient);
 }
 
-.section-4 .panel {
+.section-contact .panel {
     text-align: center;
 }
+
+.section-contact a {
+    text-decoration: none;
+}
+
+.section-contact-alt {
+    padding: 20vmin 0vmin;
+    background: var(--alternativebg);
+}
+
+.section-contact-alt .panel {
+    text-align: center;
+}
+
+.section-contact-alt a {
+    text-decoration: none;
+}
+
+/********** section privacy **************/
+.section-privacy {
+    background: var(--alternative-card-bg);
+    color: var(--alternative-card-fontcolor);
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    max-width: 50px;
+    max-height: 50px;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+  #backToTop img {
+    width: 100%; 
+  height: 100%;
+  }
+  .hidden {
+    display: none;
+  }

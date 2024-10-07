@@ -2,12 +2,12 @@
     header .navbar-brand {
       padding-left: 1rem;
     }
-    .section-1 .row .col-md-6 .panel {
+    .section-workshop .row .col-md-6 .panel {
       position: initial;
       width: initial;
       height: initial;
     }
-    .section-2 .cover {
+    .section-testimonials .cover {
       background-position: -25vmin -10vmin;
     }
     .numbers .rect {
@@ -18,20 +18,20 @@
       font-size: 2rem;
     }
   
-    .section-3 {
+    .section-wellness {
       height: inherit;
       padding: 2vmin !important;
     }
-    .section-3 .row h1 {
+    .section-wellness .row h1 {
       padding: 6vmin 4vmin;
     }
-    .section-3 .platform .col-md-6 {
+    .section-wellness .platform .col-md-6 {
       text-align: center !important;
     }
-    .section-3 .desktop i {
+    .section-wellness .desktop i {
       font-size: 8vmin;
     }
-    .section-4 .carousel-item {
+    .section-contact .carousel-item {
       padding-left: 0.6rem;
     }
     footer .row .col-md-2 {
@@ -42,13 +42,13 @@
   /* screen size 375px */
   
   @media only screen and (max-width: 375px) {
-    .section-4 .card {
+    .section-testimonials .card {
       width: 18em;
     }
   }
   
   @media only screen and (max-width: 320px) {
-    .section-4 .carousel-inner {
+    .section-testimonials .carousel-inner {
       margin-left: -4vmin;
     }
   }
